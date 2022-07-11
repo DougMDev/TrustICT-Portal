@@ -2,10 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("Hello World!!!");
-});
-router.get("/newRoute", (req, res) => {
-  res.send("Hello Mars!!!");
+  res.send("Live Chat API Request");
 });
 
 module.exports = router;
