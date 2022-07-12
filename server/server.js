@@ -6,10 +6,20 @@ const kwlRoutes = require("./Routes/knowledge_base");
 const chatRoutes = require("./Routes/live_chat");
 const statRoutes = require("./Routes/serverstatus");
 const alrtRoutes = require("./Routes/live_alerts");
-//Port to Connect To
-const port = 3001;
+// Cors & Parsing for JSON Data
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const corsOptions = {
+  origin: "http://localhost:3001",
+};
 //Run Express Server Function
 const app = express();
+//Utilising Cors and Body Parser
+app.use(cors(corsOptions));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+//Port to Connect To
+const port = 3001;
 //URL Prefixes before Each of the Routes
 app.use("/api/documents", docRoutes);
 app.use("/api/knowledgebase", kwlRoutes);
