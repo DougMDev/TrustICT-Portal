@@ -1,34 +1,33 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 
-export default function Navbar() {
-  const [currentPage, setCurrentPage] = useState("Home");
+class Navbar extends Component {
+  constructor(props) {
+    super(props);
 
-  function pageHandler(e) {
-    // console.log(typeof e.target.id); String
-    setCurrentPage(e.target.id);
-    console.log(currentPage);
+    this.state = { currentPage: "Overview" };
+
+    this.handleClick = this.handleClick.bind(this);
   }
-
-  return (
-    <div>
-      <a onClick={pageHandler} id="Home">
-        Home
-      </a>
-      <a onClick={pageHandler} id="KnowledgeBase">
-        Knowledge Base
-      </a>
-      <a onClick={pageHandler} id="ServerStatus">
-        Server Status
-      </a>
-      <a onClick={pageHandler} id="Chat">
-        Chat
-      </a>
-      <a onClick={pageHandler} id="Documents">
-        Documents
-      </a>
-      <a onClick={pageHandler} id="Login">
-        Login
-      </a>
-    </div>
-  );
+  handleClick() {
+    this.setState({ currentPage: "Test Page" });
+  }
+  render() {
+    return (
+      <div>
+        <div className="branding">
+          <h2>TrustICT</h2>
+          <span>Web Portal</span>
+        </div>
+        <div className="navlink">
+          <button onClick={this.handleClick}>Overview</button>
+          <button onClick={this.handleClick}>Knowledge Base</button>
+          <button onClick={this.handleClick}>Health</button>
+          <button onClick={this.handleClick}>Live Support</button>
+          <button onClick={this.handleClick}>Documents</button>
+        </div>
+      </div>
+    );
+  }
 }
+
+export default Navbar;
