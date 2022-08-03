@@ -1,12 +1,9 @@
 import React, { Component } from "react";
+import "./Content.css";
 
 class Content extends Component {
   render() {
-    return (
-      <div>
-        <h2></h2>
-      </div>
-    );
+    return <div className="content"></div>;
   }
 }
 

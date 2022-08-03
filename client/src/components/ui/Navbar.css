@@ -1,0 +1,80 @@
+.navbar {
+  width: 15%;
+  background-color: rgb(29, 29, 29);
+}
+
+.branding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  padding-left: 1rem;
+}
+
+.branding h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.branding h2 {
+  color: rgb(200, 200, 200);
+  font-size: 1.8rem;
+}
+.branding span {
+  color: rgb(130, 130, 130);
+}
+.branding img {
+  width: 30%;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 60%;
+}
+
+.navlinks span {
+  color: rgb(130, 130, 130);
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.nav-boxes {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin-left: 1rem;
+}
+
+.nav-boxes button {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgb(29, 29, 29);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  padding-left: 1rem;
+  color: rgb(200, 200, 200);
+}
+
+.nav-boxes button span {
+  color: rgb(200, 200, 200);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+.nav-boxes button:hover {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
