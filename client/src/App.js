@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="dashboard">
         <Navbar />
-        <Content />
+        <Content username={"Doug"} />
       </div>
     );
   }
