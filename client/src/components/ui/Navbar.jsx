@@ -11,15 +11,11 @@ import ArticleIcon from "@mui/icons-material/Article";
 class Navbar extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { currentPage: "overview" };
-
-    this.handleClick = this.handleClick.bind(this);
+    this.handlePageChange = this.handlePageChange.bind(this);
   }
-  handleClick(e) {
-    this.setState({ currentPage: e.target.id }, () => {
-      console.log(this.state.currentPage);
-    });
+
+  handlePageChange(e) {
+    this.props.handlePageChange(e.currentTarget.value);
   }
   render() {
     return (
@@ -32,31 +28,31 @@ class Navbar extends Component {
         <div className="navlinks">
           <span>MENU</span>
           <div className="nav-boxes">
-            <button onClick={this.handleClick} id="overview">
+            <button onClick={this.handlePageChange} value="Overview">
               <HomeIcon style={{ fill: "#5c66bd" }} />
               <span>Overview</span>
             </button>
           </div>
           <div className="nav-boxes">
-            <button onClick={this.handleClick} id="knowledge">
+            <button onClick={this.handlePageChange} value="Knowledge">
               <SchoolIcon style={{ fill: "#4d7d48" }} />
               <span>Knowledge Base</span>
             </button>
           </div>
           <div className="nav-boxes">
-            <button onClick={this.handleClick} id="health">
+            <button onClick={this.handlePageChange} value="Health">
               <FavoriteIcon style={{ fill: "#63182a" }} />
               <span>Health</span>
             </button>
           </div>
           <div className="nav-boxes">
-            <button onClick={this.handleClick} id="support">
+            <button onClick={this.handlePageChange} value="Support">
               <ContactSupportIcon style={{ fill: "#5c66bd" }} />
               <span>Live Support</span>
             </button>
           </div>
           <div className="nav-boxes">
-            <button onClick={this.handleClick} id="documents">
+            <button onClick={this.handlePageChange} value="Documents">
               <ArticleIcon style={{ fill: "#8a7f1c" }} />
               <span>Documents</span>
             </button>
