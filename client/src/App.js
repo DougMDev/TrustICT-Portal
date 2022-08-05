@@ -15,14 +15,16 @@ class App extends Component {
   }
 
   render() {
-    const { currpage } = this.state;
     return (
       <div className="dashboard">
-        <Navbar handlePageChange={this.handlePageChange} currpage={currpage} />
+        <Navbar
+          handlePageChange={this.handlePageChange}
+          currpage={this.state.currpage}
+        />
         <Content
           handlePageChange={this.handlePageChange}
-          username={"Doug"}
-          currpage={currpage}
+          username={"Guest"}
+          currpage={this.state.currpage}
         />
       </div>
     );
