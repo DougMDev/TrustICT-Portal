@@ -1,5 +1,7 @@
 import React from "react";
 import "./UsefulLinks.css";
+import MSStream from "../../../media/msStream.png";
+//Material UI Icons
 import cTptLogo from "../../../media/coloured_tptlogo.png";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import TerminalIcon from "@mui/icons-material/Terminal";
@@ -9,6 +11,22 @@ import FolderSharedIcon from "@mui/icons-material/FolderShared";
 import CloudDoneIcon from "@mui/icons-material/CloudDone";
 import AppleIcon from "@mui/icons-material/Apple";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
+//School Logos
+import FosseWay from "../../../media/logos/fosseway-logo-1.jpg";
+import AbbotA from "../../../media/logos/abbota.jpg";
+import Cameley from "../../../media/logos/Cameley-school-logo-581.jpg";
+import ChewM from "../../../media/logos/Chew-Magna-logo.jpg";
+import Farmb from "../../../media/logos/Farmborough_logo_round_581.jpg";
+import Hayesdown from "../../../media/logos/Hayesdown-Logo.gif";
+import Marksbury from "../../../media/logos/marksburycofe_logo.jpg";
+import Wasps from "../../../media/logos/Wasps-Logo-FINAL.jpg";
+import Nunney from "../../../media/logos/nunney-logo-581.jpg";
+import Paulton from "../../../media/logos/paulton-infant-school-logo-square.jpg";
+import Pensford from "../../../media/logos/Pensford-Logo.jpg";
+import Roundhill from "../../../media/logos/roundhill.jpg";
+import StMarys from "../../../media/logos/St-Marys-School-Colour.jpg";
+import Castle from "../../../media/logos/Castle-Logo.jpg";
+import Mendip from "../../../media/logos/tms.jpg";
 
 export default function UsefulLinks() {
   return (
@@ -120,7 +138,9 @@ export default function UsefulLinks() {
             </div>
           </div>
         </div>
-        <div className="policies-block grid-item"></div>
+        <div className="policies-block grid-item">
+          <h3>Policies and Services</h3>
+        </div>
         <div className="links-block grid-item">
           <h3>Some Links you may find useful!</h3>
           <p>
@@ -157,8 +177,107 @@ export default function UsefulLinks() {
             </a>
           </div>
         </div>
-        <div className="other-block grid-item"></div>
-        <div className="schools-block grid-item"></div>
+        <div className="resources-block grid-item">
+          <h3>Useful Resources</h3>
+          <div className="resources">
+            <img src={MSStream} alt="stream icon"></img>
+            <a href="https://web.microsoftstream.com/channel/bd15402e-7ca7-4438-b2b7-f592535489a6">
+              TrustICT Stream Site
+            </a>
+            <p>
+              Videos are feautred on how to do common tasks you or issues you
+              may encounter using the system
+            </p>
+          </div>
+        </div>
+        <div className="schools-block grid-item">
+          <h4>
+            Schools within Our Trust - Click on an Image to visit the schools
+            current Website
+          </h4>
+          <span>
+            We do not support all schools listed here at this current time.
+          </span>
+          <div className="school-logos-block">
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={FosseWay}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={AbbotA} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Cameley}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={Castle} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={ChewM} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={Farmb} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Hayesdown}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Marksbury}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={Wasps} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={Nunney} alt="school logo"></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Paulton}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Pensford}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={Roundhill}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img
+                className="school-logo"
+                src={StMarys}
+                alt="school logo"
+              ></img>
+            </a>
+            <a href="www.fossewayschool.com" target="_blank" rel="noreferrer">
+              <img className="school-logo" src={Mendip} alt="school logo"></img>
+            </a>
+          </div>
+        </div>
         <div className="tpt-block grid-item">
           <img src={cTptLogo} alt="The Partnership Trust logo"></img>
           <a

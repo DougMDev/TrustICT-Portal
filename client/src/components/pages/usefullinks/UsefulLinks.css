@@ -27,7 +27,7 @@
 }
 
 .form-title {
-  color: rgb(102, 102, 102);
+  color: rgb(0, 0, 0);
 }
 .form-para {
   color: rgb(102, 102, 102);
@@ -67,13 +67,35 @@
 }
 
 .policies-block {
+  padding: 10px;
   grid-column: 3 / 5;
   grid-row: 1;
 }
 
 .schools-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   grid-column: 3 / 5;
   grid-row: 2;
+}
+.schools-block h4 {
+  padding: 5px;
+  margin: 0;
+}
+.schools-block span {
+  color: grey;
+  font-size: 0.6rem;
+}
+.school-logos-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.school-logo {
+  width: 45px;
+  height: 45px;
 }
 
 .links-block {
@@ -104,9 +126,21 @@
   color: rgb(50, 50, 110);
 }
 
-.other-block {
+.resources-block {
+  padding: 10px;
   grid-column: 2 / 3;
   grid-row: 2 / 4;
+}
+.resources img {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+}
+.resources a {
+  font-weight: bold;
+  text-decoration: none;
+  color: blueviolet;
 }
 
 .tpt-block {
@@ -170,4 +204,5 @@
 .grid-item {
   background-color: rgb(239, 241, 243);
   border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(224, 224, 224);
 }
