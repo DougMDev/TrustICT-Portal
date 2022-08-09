@@ -26,7 +26,18 @@ class Navbar extends Component {
           <span>Web Portal</span>
         </div>
         <div className="navlinks">
-          <span>MENU</span>
+          <div className="menu-bar">
+            <span>MENU</span>
+            <button>
+              <a
+                href="https://tptictservice.on.spiceworks.com/portal"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Submit Ticket
+              </a>
+            </button>
+          </div>
           <div className="nav-boxes">
             <button onClick={this.handlePageChange} value="Overview">
               <HomeIcon style={{ fill: "#5c66bd" }} />
@@ -52,9 +63,9 @@ class Navbar extends Component {
             </button>
           </div>
           <div className="nav-boxes">
-            <button onClick={this.handlePageChange} value="Documents">
+            <button onClick={this.handlePageChange} value="UsefulLinks">
               <ArticleIcon style={{ fill: "#8a7f1c" }} />
-              <span>Documents</span>
+              <span>Useful Links</span>
             </button>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
+import "./Knowledge.css";
 
 export default function Knowledge() {
-  return <div>Knowledge Base Page</div>;
+  return <div className="main-block">Knowledge Base Page</div>;
 }

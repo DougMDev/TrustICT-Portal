@@ -7,34 +7,28 @@
   border-top: 1px solid rgba(200, 200, 200, 0.2);
 }
 
-.navlogin h3 {
-  color: rgb(130, 130, 130);
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-weight: 700;
-  font-size: 0.8rem;
-}
-
-.user-info {
-  height: 50%;
-  width: 80%;
-  background-color: rgb(130, 130, 130);
-  border-radius: 20px;
-  align-self: center;
-}
-
-.navlogin button {
-  justify-content: center;
-  align-items: center;
+.login-box {
   display: flex;
-  height: 15%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 85%;
   width: 80%;
-  padding-right: 1.5rem;
+  background-color: rgb(234, 234, 234);
+  border-radius: 15px;
   align-self: center;
-  border-radius: 20px;
-  border: none;
-  background-color: rgb(70, 70, 70);
-  color: rgb(166, 166, 166);
-  font-size: 1.1rem;
-  font-weight: 700;
+}
+
+.login-box h3,
+p {
+  padding-left: 1rem;
+}
+
+.login-box h3 {
+  color: rgb(47, 102, 47);
+  padding-top: 1rem;
+  font-weight: 800;
+}
+
+.login-box p {
+  color: rgb(128, 128, 128);
 }

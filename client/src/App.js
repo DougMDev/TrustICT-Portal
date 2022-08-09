@@ -24,6 +24,7 @@ class App extends Component {
         <Content
           handlePageChange={this.handlePageChange}
           username={"Guest"}
+          notifications={"0"}
           currpage={this.state.currpage}
         />
       </div>

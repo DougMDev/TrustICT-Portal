@@ -8,12 +8,28 @@
 }
 
 .welcome-banner {
+  display: flex;
+  align-items: center;
   height: 5%;
   width: 100%;
   background-color: rgb(234, 234, 234);
 }
+#user-welcome {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+#notification-alert {
+  color: grey;
+  padding-left: 1rem;
+}
+#notification-alert span {
+  color: rgb(77, 216, 146);
+}
 
 .inner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 97%;
   background-color: rgb(234, 234, 234);
   height: 93%;

@@ -4,7 +4,7 @@ import Overview from "../pages/overview/Overview";
 import Knowledge from "../pages/knowledge/Knowledge";
 import Health from "../pages/health/Health";
 import Support from "../pages/livesupport/Support";
-import Documents from "../pages/documents/Documents";
+import UsefulLinks from "../pages/usefullinks/UsefulLinks";
 
 class Content extends Component {
   render() {
@@ -21,13 +21,17 @@ class Content extends Component {
     if (this.props.currpage === "Support") {
       loadedPage = <Support />;
     }
-    if (this.props.currpage === "Documents") {
-      loadedPage = <Documents />;
+    if (this.props.currpage === "UsefulLinks") {
+      loadedPage = <UsefulLinks />;
     }
     return (
       <div className="content">
         <div className="welcome-banner">
-          <p>Hi There {this.props.username}</p>
+          <p id="user-welcome">Hi There {this.props.username}.</p>
+          <p id="notification-alert">
+            There have been {this.props.notifications} updates since your last
+            visit. Please <span>Login</span> for more info.
+          </p>
         </div>
         <div className="inner-content">{loadedPage}</div>
       </div>
